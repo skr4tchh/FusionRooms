@@ -28,7 +28,7 @@ public class FusionRooms extends JavaPlugin implements Listener {
 
     public void onEnable() {
         instance = this;
-        this.saveResource("config.yml", false);
+        saveDefaultConfig();
         Bukkit.getPluginManager().registerEvents(this, this);
         ConfigurationSection roomsCfgSection = this.getConfig().getConfigurationSection("rooms");
         roomsCfgSection.getKeys(false).forEach((roomId) -> {
