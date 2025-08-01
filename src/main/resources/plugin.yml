@@ -1,0 +1,5 @@
+name: FusionRooms
+version: '${version}'
+main: fun.fusionmine.fusionrooms.FusionRooms
+api-version: '1.16'
+depend: [WorldGuardEvents, WorldGuard]
